@@ -1,0 +1,17 @@
+hbr-backend/
+├── src/
+│   ├── main/
+│   │   ├── java/com/hbr/
+│   │   │   ├── controller/
+│   │   │   ├── dto/
+│   │   │   ├── model/
+│   │   │   ├── repository/
+│   │   │   ├── security/
+│   │   │   ├── service/
+│   │   │   └── HbrApplication.java
+│   │   └── resources/
+│   │       ├── application.properties
+│   │       └── templates/ (PDF, email, etc.)
+├── pom.xml
+├── README.md
+└── INSTALLATION_GUIDE.pdf

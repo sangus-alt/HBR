@@ -1,0 +1,21 @@
+frontend-hbr/
+├── index.html                      # Accueil
+├── assets/
+│   ├── styles.css                  # (optionnel : personnalisations CSS)
+│   ├── script.js                   # Scripts JS communs
+│   └── images/                    # Logos, images accueil
+├── clients/
+│   ├── list.html                   # Liste des clients
+│   ├── add.html                    # Ajouter un client
+│   ├── edit.html                   # Modifier un client
+├── reservations/
+│   └── ...                         # Idem clients (CRUD)
+├── factures/
+│   └── ...                         # CRUD + PDF
+├── stock/
+│   └── ...                         # Stock + lecture code-barres
+├── login.html                      # Connexion utilisateur
+├── dashboard.html                  # Tableau de bord
+└── js/
+    ├── api.js                      # Gestion des appels API
+    └── auth.js                     # Auth JWT (login/logout/token)
