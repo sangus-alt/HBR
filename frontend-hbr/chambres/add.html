@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ajouter Chambre</title>
+  <link href="../css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <h1>Nouvelle Chambre</h1>
+  <form id="addChambreForm" enctype="multipart/form-data">
+    <label>Nom : <input type="text" name="nom" required /></label><br/>
+    <label>Catégorie : <input type="text" name="categorie" required /></label><br/>
+    <label>Type de lit : <input type="text" name="typeLit" required /></label><br/>
+    <label>Superficie (m²) : <input type="number" name="superficie" required /></label><br/>
+    <label>Prix : <input type="number" name="prix" required /></label><br/>
+    <label>Statut : 
+      <select name="statut">
+        <option value="libre">Libre</option>
+        <option value="occupée">Occupée</option>
+        <option value="réservée_non_payée">Réservée (non payée)</option>
+        <option value="réservée_payée">Réservée (payée)</option>
+        <option value="louée">Louée</option>
+        <option value="indisponible">Indisponible</option>
+      </select>
+    </label><br/>
+    <label>Images (4 max): 
+      <input type="file" name="images" multiple accept="image/*" required />
+    </label><br/>
+    <button type="submit">Enregistrer</button>
+  </form>
+  <a href="list.html">Retour</a>
+  <script src="../js/chambre.js"></script>
+</body>
+</html>

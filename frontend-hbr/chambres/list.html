@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Liste des Chambres</title>
+  <link href="../css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <h1>Chambres</h1>
+  <a href="add.html">Ajouter une chambre</a>
+  <table>
+    <thead>
+      <tr>
+        <th>Nom</th>
+        <th>Catégorie</th>
+        <th>Type de lit</th>
+        <th>Superficie</th>
+        <th>Prix</th>
+        <th>Statut</th>
+        <th>Images</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="chambreTable"></tbody>
+  </table>
+  <script src="../js/chambre.js"></script>
+  <script>chargerChambres();</script>
+</body>
+</html>

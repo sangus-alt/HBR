@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head><meta charset="UTF-8"><title>Modifier Commande</title><link href="../css/styles.css" rel="stylesheet"></head>
+<body>
+  <h1>Modifier Commande</h1>
+  <form id="commandeForm">
+    <label>Client : <input type="text" name="client" required></label><br>
+    <label>Date : <input type="date" name="date" required></label><br>
+    <label>Statut : 
+      <select name="statut" required>
+        <option value="En attente">En attente</option>
+        <option value="Confirmée">Confirmée</option>
+        <option value="Annulée">Annulée</option>
+      </select>
+    </label><br>
+    <label>Total : <input type="number" name="total" step="0.01" required></label><br>
+    <button type="submit">Enregistrer</button>
+  </form>
+  <script src="../js/commande.js"></script>
+</body>
+</html>

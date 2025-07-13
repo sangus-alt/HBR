@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Modifier Chambre</title>
+  <link href="../css/styles.css" rel="stylesheet" />
+</head>
+<body>
+  <h1>Modifier Chambre</h1>
+  <form id="editChambreForm" enctype="multipart/form-data">
+    <input type="hidden" name="id" id="chambreId" />
+    <label>Nom : <input type="text" name="nom" id="nom" required /></label><br />
+    <label>Catégorie : <input type="text" name="categorie" id="categorie" required /></label><br />
+    <label>Type de lit : <input type="text" name="typeLit" id="typeLit" required /></label><br />
+    <label>Superficie (m²) : <input type="number" name="superficie" id="superficie" required /></label><br />
+    <label>Prix : <input type="number" name="prix" id="prix" required /></label><br />
+    <label>Statut :
+      <select name="statut" id="statut">
+        <option value="libre">Libre</option>
+        <option value="occupée">Occupée</option>
+        <option value="réservée_non_payée">Réservée non payée</option>
+        <option value="réservée_payée">Réservée payée</option>
+        <option value="louée">Louée</option>
+        <option value="indisponible">Indisponible</option>
+      </select>
+    </label><br />
+    <label>Images supplémentaires :
+      <input type="file" name="images" accept="image/*" multiple />
+    </label><br />
+    <button type="submit">Mettre à jour</button>
+  </form>
+  <a href="list.html">Retour</a>
+  <script src="../js/chambre.js"></script>
+  <script>chargerChambrePourEdition();</script>
+</body>
+</html>
