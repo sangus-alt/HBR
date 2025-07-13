@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tableau de Bord - HBR</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+<body onload="verifierConnexion(); afficherNomUtilisateur();" class="bg-gray-100 min-h-screen">
+  <header class="bg-blue-800 text-white px-6 py-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold">🏨 HBR - Tableau de bord</h1>
+    <div class="flex gap-4 items-center">
+      <span id="nomUtilisateur" class="text-sm italic"></span>
+      <button onclick="seDeconnecter()" class="bg-red-500 px-4 py-1 rounded hover:bg-red-600 text-sm">Se déconnecter</button>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 py-8">
+    <section class="mb-8">
+      <h2 class="text-xl font-semibold mb-4">Modules principaux</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <a href="/clients/list.html" class="bg-white p-5 rounded shadow hover:shadow-lg transition">
+          <h3 class="text-lg font-bold">👥 Clients</h3>
+          <p class="text-sm text-gray-500">Gérer les clients</p>
+        </a>
+        <a href="/reservations/list.html" class="bg-white p-5 rounded shadow hover:shadow-lg transition">
+          <h3 class="text-lg font-bold">📅 Réservations</h3>
+          <p class="text-sm text-gray-500">Chambres, tables, salles</p>
+        </a>
+        <a href="/produits/list.html" class="bg-white p-5 rounded shadow hover:shadow-lg transition">
+          <h3 class="text-lg font-bold">🍽 Produits</h3>
+          <p class="text-sm text-gray-500">Boissons, plats, articles</p>
+        </a>
+        <a href="/factures/list.html" class="bg-white p-5 rounded shadow hover:shadow-lg transition">
+          <h3 class="text-lg font-bold">🧾 Factures</h3>
+          <p class="text-sm text-gray-500">Paiements, PDV</p>
+        </a>
+        <a href="/stock/list.html" class="bg-white p-5 rounded shadow hover:shadow-lg transition">
+          <h3 class="text-lg font-bold">📦 Stock</h3>
+          <p class="text-sm text-gray-500">Inventaire, livraison, alertes</p>
+        </a>
+        <a href="/employes/list.html" class="bg-white p-5 rounded shadow hover:shadow-lg transition">
+          <h3 class="text-lg font-bold">👨‍🍳 Employés</h3>
+          <p class="text-sm text-gray-500">Fiches, horaires, congés</p>
+        </a>
+        <a href="/rapports/index.html" class="bg-white p-5 rounded shadow hover:shadow-lg transition">
+          <h3 class="text-lg font-bold">📈 Rapports</h3>
+          <p class="text-sm text-gray-500">Statistiques, exports</p>
+        </a>
+        <a href="/parametres/systeme.html" class="bg-white p-5 rounded shadow hover:shadow-lg transition">
+          <h3 class="text-lg font-bold">⚙️ Paramètres</h3>
+          <p class="text-sm text-gray-500">Structure, configuration</p>
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-lg font-semibold mb-2">Raccourcis utiles</h2>
+      <div class="flex flex-wrap gap-4">
+        <a href="/clients/add.html" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">+ Client</a>
+        <a href="/reservations/add.html" class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700">+ Réservation</a>
+        <a href="/factures/add.html" class="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600">+ Facture</a>
+        <a href="/produits/add.html" class="bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600">+ Produit</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center py-4 text-sm text-gray-500">
+    &copy; 2025 HBR Software - Tous droits réservés
+  </footer>
+
+  <script src="/js/auth.js"></script>
+</body>
+</html>
